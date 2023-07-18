@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 600;
+    margin: 0 0 96px;
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+a {
+    font-size: 1.5rem;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+.section{
+    padding: 50px 5%;
+}
+
+/* Navbar section */
+#navbar-section {
+    display: flex;
+    gap: 100px;
+    font-weight: 600;
+}
+
+/* Hero Section */
+#hero-section{
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   height: 80vh;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px   ;
+}
+
+.hero-web-dev{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.hero-text{
+    color: grey;
+}
+
+.profile-img{
+    width: 500px;
+    border-radius: 50%;
+}
+
+/* Skills Section */
+#skills-section{
+    background-color: #EBE6E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lists-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 96px;
+}
+
+/* Projects Section */
+#projects-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 52px;
+}
+
+.projects-container-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.projects-image{
+    width: 100%;
+}
+
+.projects-description{
+    text-align: left;
+}
+
+.projects-image{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.button{
+    background-color: #EBE6E6;
+    width: 50%; 
+}
+
+/* Contact Me Section */
+#contact-section{
+    background-color: #EBE6E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container{
+    display: flex;
+    gap: 96px;
+}
+
+.contact-container-a{
+    text-align: center;
+    border: 1px solid #EBE6E6;
+    
+}
+
+.contact-container-a:hover{
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    background-color: #EBE6E6;
+}
+
+.contact-container-img{
+    width: 40px;
+}
+
+/* Media Query - Ipads and Tablets Devices */
+@media (max-width: 1200px) and (min-width: 768px) {
+    /* Navbar section */
+    #navbar-section{
+        gap: 32px;
+    }
+    /* Hero Section */
+    #hero-section{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-container{
+        order: 1;
+    }
+    /* Skills Section */
+    .lists-container {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        text-align: center;
+    }
+    /* Projects Section */
+    .projects-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        gap: 96px;
+    }
+    /* Contact Me Section */
+    .contact-container{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contact-container-a{
+        border: 1px solid black;
+    }
+}
+
+/* Media Query - Mobile Devices  */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    a{
+        font-size: 1.1rem;
+    }
+
+    /* Navbar section */
+    #navbar-section{
+        display: none;
+    }
+    /* Hero Section */
+    #hero-section{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero-container{
+        order: 1;
+    }
+
+    .hero-web-dev{
+        font-size: 1.7rem;
+    }
+
+    .hero-text{
+        text-align: justify;
+    }
+
+    .profile-img{
+        width: 80%;
+    }
+    /* Skills Section */
+    .lists-container {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+        text-align: center;
+        gap: 32px;
+    }
+    /* Projects Section */
+    .projects-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        gap: 96px;
+    }
+
+    .projects-description{
+        text-align: justify;
+    }
+
+    /* Contact Me Section */
+    .contact-container{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .contact-container-a{
+        border: 1px solid black;
+        padding: 4px;
+    }
+}
+
