@@ -1,99 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernando's Personal Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
+
 <body>
-    <div>
-        <div id="navbar-section" class="section">
-            <a href="#hero-section">About Me</a>
-            <a href="#skills-section">Skills</a>
-            <a href="#projects-section">Projects</a>
-            <a href="#contact-section">Contact Me</a>
+  <h1 id="level-title">Press Any Key to Start</h1>
+  <div class="container">
+    <div lass="row">
 
-        </div>
-        <div id="hero-section" class="section">
-            <div class="hero-container">
-                <h1>Fernando Dalpiaz</h1>
-                <h2 class="hero-web-dev">Web Developer</h2>
-                <p class="hero-text">I am a Brazilian Analysis and Systems Development student, with 7 months of experience as a Web Developer. Currently working as a Freelancer.</p>
-            </div>
-            <img class="profile-img" src="./assets/profile-picture.jpeg" alt="Fernando's profile picture">
-        </div>
+      <div type="button" id="green" class="btn green">
 
-        <div id="skills-section" class="section">
-            <h2>Skills</h2>
-            <div class="lists-container">
-                <div>
-                    <h3>Programming Languages</h3>
-                    <p>JavaScript</p>
-                    <p>Python</p>
-                </div>
-                <div>
-                    <h3>Technologies</h3>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>NodeJs</p>
-                </div>
-                <div>
-                    <h3>Frameworks</h3>
-                    <p>Bootstrap</p>
-                    <p>JQuery</p>
-                    <p>ExpressJs</p>
-                </div>
-                <div>
-                    <h3>Languages</h3>
-                    <p>Portuguese</p>
-                    <p>English</p>
-                </div>
-            </div>  
-        </div>
+      </div>
 
-        <div id="projects-section" class="section">
-            <h2>Projects</h2>
-            <div class="projects-container">
-                <div class="projects-container-item" href="#hero-section">
-                    <h3>Cake Shop Website</h3>
-                    <img class="projects-image" src="./assets/project-delicias-da-meri.png" alt="project image">
-                    <p class="projects-description">This Website was designed with pure <span class="span-bold">CSS</span>. It is <span class="span-bold">responsive</span> and focused on <span class="span-bold">User Experience</span>.</p>
-                    <a class="button" href="https://www.deliciasdamerii.com.br/">Visit Website</a>
-                </div>
-                <div class="projects-container-item">
-                    <h3>Cake Shop Website</h3>
-                    <img class="projects-image" src="./assets/project-delicias-da-meri.png" alt="project image">
-                    <p class="projects-description">This Website was designed with pure <span class="span-bold">CSS</span>. It is <span class="span-bold">responsive</span> and focused on <span class="span-bold">User Experience</span>.</p>
-                    <a class="button" href="https://www.deliciasdamerii.com.br/">Visit Website</a>
-                </div>
-                </div>
-            </div>
-        </div>
+      <div type="button" id="red" class="btn red">
 
-        <div id="contact-section" class="section">
-            <h2>Contact Me</h2>
-            <div class="contact-container">
-                <a class="contact-container-a" href="mailto:fernandoldalpiaz@gmail.com">
-                    <img class="contact-container-img" src="./assets/envelope-regular.svg" alt="Envelope image">
-                    <h3>Email</h3>
-                    <p>fernandoldalpiaz@gmail.com</p>
-                </a>
-                <a class="contact-container-a"  href="https://www.linkedin.com/in/fernando-dalpiaz">
-                    <img class="contact-container-img" src="./assets/linkedin.svg" alt="Linkedin Logo">
-                    <h3>Linkedin</h3>
-                    <p>www.linkedin.com/in/fernando-dalpiaz</p>
-                </a>
-                <a class="contact-container-a" href="https://wa.me/5527992847033">
-                    <img class="contact-container-img" src="./assets/phone-solid.svg" alt="Phone image">
-                    <h3>Cellphone Number</h3>
-                    <p>55+ (27) 99284-7033</p>
-                </a>
-            </div>
-        </div>
+      </div>
     </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="game.js"></script>
 </body>
+<footer class="credit"><h2>Made by Fernando Luiz Dalpiaz.</h2></footer>
 </html>
